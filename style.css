@@ -180,3 +180,69 @@ footer {
     padding: 20px;
     margin-top: 40px;
 }
+
+#evangelizaciones {
+    padding: 40px 0;
+    overflow: hidden;
+}
+
+.carousel-container {
+    position: relative;
+    max-width: 900px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+.carousel-wrapper {
+    overflow: hidden; /* Esconde las fotos que se salen del cuadro */
+    width: 100%;
+    border-radius: 12px;
+}
+
+.carousel-slide {
+    display: flex; /* Pone las fotos una al lado de la otra */
+    transition: transform 0.5s ease-in-out;
+    gap: 10px;
+}
+
+.foto-item {
+    min-width: 100%; /* Cada foto ocupa todo el ancho del carrusel */
+    text-align: center;
+    background: white;
+}
+
+.foto-item img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    margin: 0;
+    border-radius: 12px 12px 0 0;
+}
+
+.foto-caption {
+    padding: 10px;
+    background: var(--azul-principal);
+    color: white;
+    margin: 0;
+    border-radius: 0 0 12px 12px;
+    font-size: 0.9rem;
+}
+
+/* Botones de navegación */
+.prev, .next {
+    background-color: var(--azul-principal);
+    color: white;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    border-radius: 50%;
+    margin: 0 10px;
+    z-index: 10;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.prev:hover, .next:hover {
+    background-color: var(--naranja-llama);
+}
