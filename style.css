@@ -1,0 +1,149 @@
+/* Variables de color según el cartel */
+:root {
+    --azul-principal: #005689;
+    --dorado: #FFD700;
+    --naranja-llama: #FF4500;
+    --gris-biblia: #A9A9A9;
+    --blanco: #FFFFFF;
+    --fondo-ligero: #f4f7f9;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    background-color: var(--fondo-ligero);
+    color: #333;
+    scroll-behavior: smooth;
+}
+
+/* Header y Navegación */
+header {
+    background-color: var(--azul-principal);
+    color: var(--blanco);
+    padding: 30px 10px;
+    text-align: center;
+    border-bottom: 5px solid var(--dorado);
+}
+
+.logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.lema {
+    font-style: italic;
+    color: var(--dorado);
+    margin: 15px 0;
+    font-size: 0.95rem;
+}
+
+nav {
+    margin-top: 20px;
+}
+
+nav a {
+    color: var(--blanco);
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+
+nav a:hover {
+    color: var(--dorado);
+}
+
+/* Contenedores y Secciones */
+.container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+}
+
+section {
+    padding: 40px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+h2 {
+    color: var(--azul-principal);
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Cuadrícula de Horarios */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: var(--blanco);
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    border-top: 4px solid var(--azul-principal);
+}
+
+.resaltado {
+    color: var(--azul-principal);
+    font-weight: bold;
+}
+
+/* Eventos y Botones */
+.evento-especial {
+    background: var(--azul-principal);
+    color: white;
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.tag {
+    background: var(--dorado);
+    color: #333;
+    display: inline-block;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.btn-naranja {
+    background-color: var(--naranja-llama);
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 20px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-naranja:hover {
+    transform: scale(1.05);
+}
+
+/* Mapa */
+.mapa-placeholder {
+    background: #e0e0e0;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+}
+
+footer {
+    background: var(--azul-principal);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
