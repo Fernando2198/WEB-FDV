@@ -24,6 +24,31 @@ header {
     text-align: center;
     border-bottom: 5px solid var(--dorado);
 }
+
+.hero-section {
+    position: relative;
+    margin-bottom: 40px;
+    padding: 0; /* Quitamos el padding para que la imagen luzca más */
+}
+
+.img-header {
+    width: 100%;
+    height: 450px; /* La altura ideal para que no tape toda la pantalla */
+    object-fit: cover; /* Recorta la foto para que llene el espacio sin estirarse */
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.hero-text {
+    text-align: center;
+    padding: 20px;
+}
+
+.hero-text h2 {
+    color: var(--azul-principal);
+    font-size: 2rem;
+    margin-top: 10px;
+}
 /* Estilo específico para el logo en el encabezado */
 .logo-img {
     height: 70px; /* Ajusta este valor según prefieras */
