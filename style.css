@@ -246,3 +246,58 @@ footer {
 .prev:hover, .next:hover {
     background-color: var(--naranja-llama);
 }
+
+#contacto {
+    padding: 40px 20px;
+    background-color: var(--blanco);
+    text-align: center;
+}
+
+.contacto-info {
+    margin-bottom: 30px;
+    color: var(--azul-principal);
+}
+
+.mapa-container {
+    max-width: 900px;
+    margin: 0 auto;
+    border: 5px solid var(--azul-principal); /* Marco con el azul del logo */
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.mapa-container iframe {
+    vertical-align: middle;
+}
+
+.redes-sociales {
+    margin-top: 30px;
+    padding: 20px;
+    text-align: center;
+}
+
+.redes-sociales p {
+    font-weight: bold;
+    color: var(--azul-principal);
+    margin-bottom: 15px;
+}
+
+.btn-instagram {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background-color: var(--naranja-llama); /* Naranja de tu cartel */
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: transform 0.3s, background-color 0.3s;
+    box-shadow: 0 4px 10px rgba(255, 69, 0, 0.3);
+}
+
+.btn-instagram:hover {
+    background-color: #e63e00; /* Un naranja un poco más oscuro al pasar el mouse */
+    transform: translateY(-3px); /* Pequeño salto hacia arriba */
+}
